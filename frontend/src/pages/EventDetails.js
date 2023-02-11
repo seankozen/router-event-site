@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
 
-import EventsPage from "./Events";
-
 function EventDetailPage() {
   const params = useParams();
     
