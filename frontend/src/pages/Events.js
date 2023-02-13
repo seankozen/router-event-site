@@ -1,27 +1,25 @@
-import { Link } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 
-const DUMMY_EVENTS = [
-  {
-    id: 'e1',
-    title: "Some Event",
-  },
-  { id: 'e2',
-    title: 'Another Event',
-  },
-];
+import EventsList from '../components/EventsList';
 
 function EventsPage() {
+  const data = useLoaderData();
+  const events = data.events;
+
   return (
-    <>
-    <h1>Events Page</h1>
-    <ul>
-        {DUMMY_EVENTS.map(event => <li key ={event.id}>
-            <Link to={event.id}>{event.title}</Link>
-        </li>)}
-    </ul>
-  
-    </>
+      <EventsList events={events}/>
   );
 }
 
 export default EventsPage;
+
+//Cannot use hooks in a loader
+export async function loader () {
+  const response = await fetch('http://localhost:8080/events');
+
+  if (!response.ok) {
+    throw { message: 'Could not fetch events.' };
+  } else {
+    return response;    
+  }
+} 
