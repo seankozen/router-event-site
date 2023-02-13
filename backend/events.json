@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Fly Casting Lessons","image":"https://assets.orvis.com/is/image/orvisprd/FF101_2018_PondCasting_0149_1?wid=1980&src=is($object$:7-3)","date":"2023-04-01","description":"Learn various casts and tecniques.","id":"48efa924-3bce-4ed4-8236-c93ad82a440c"},{"title":"Birthday Party","image":"https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600","date":"2023-03-08","description":"Celebrate with us!","id":"5bfa0a00-e506-48cd-b9e5-ae0ddf06fbe8"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
